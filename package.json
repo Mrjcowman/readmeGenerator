@@ -1,0 +1,23 @@
+{
+  "name": "readmeGenerator",
+  "version": "1.0.0",
+  "description": "A node.js application to quickly and easily generate markdown readmes for my projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrjcowman/readmeGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrjcowman/readmeGenerator/issues"
+  },
+  "homepage": "https://github.com/Mrjcowman/readmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}

@@ -21,6 +21,11 @@
     },
     {
         "type": "input",
+        "message": "Description >",
+        "name": "description"
+    },
+    {
+        "type": "input",
         "message": "Installation commands >",
         "name": "installation"
     },

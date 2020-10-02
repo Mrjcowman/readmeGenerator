@@ -1,0 +1,57 @@
+[
+    {
+        "type": "input",
+        "message": "Project Name (required) >",
+        "name": "fullName"
+    },
+    {
+        "type": "input",
+        "message": "Github Username >",
+        "name": "user"
+    },
+    {
+        "type": "input",
+        "message": "Github Repo >",
+        "name": "repo"
+    },
+    {
+        "type": "input",
+        "message": "Deployed URL >",
+        "name": "deployedURL"
+    },
+    {
+        "type": "input",
+        "message": "Installation commands >",
+        "name": "installation"
+    },
+    {
+        "type": "input",
+        "message": "Usage commands >",
+        "name": "usage"
+    },
+    {
+        "type": "input",
+        "message": "License >",
+        "name": "license"
+    },
+    {
+        "type": "input",
+        "message": "Contributing instructions >",
+        "name": "contributing"
+    },
+    {
+        "type": "input",
+        "message": "Tests >",
+        "name": "tests"
+    },
+    {
+        "type": "input",
+        "message": "Credits >",
+        "name": "credits"
+    },
+    {
+        "type": "input",
+        "message": "Questions Email >",
+        "name": "questions"
+    }
+]

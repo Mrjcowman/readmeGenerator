@@ -79,18 +79,20 @@ inquirer.prompt(questions)
         // If any of the following aren't required and are left blank,
         // ommit them from the result. Required will have *
 
-        // Name*
-        // Deployed Site Link
-        // Screencap
-        // Github Repo
-        // Description*
-        // Installation Instructions
-        // Usage*
-        // License
-        // Contributing Guidelines
-        // Tests
-        // Credits
-        // Questions
+        // x Name*
+        // x Deployed Site Link
+        //   Screencap
+        // x Github Repo
+        // x Description*
+        // x Installation Instructions
+        // x Usage*
+        // ~ License
+        // x Contributing Guidelines
+        // x Tests
+        // x Credits
+        // x Questions
+
+        console.log("Done!");
     })
 
     // TODO: Generate Table of Contents

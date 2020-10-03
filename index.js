@@ -37,59 +37,101 @@ inquirer.prompt(questions)
 
         console.log("Done!");
 
-        const {fullName,
+        let {fullName,
                 description,
                 deployedURL,
                 installation,
                 usage,
+                license,
                 user,
                 repo,
                 contributing,
                 tests,
                 credits,
                 questions} = responses;
+        
+        let deployedSiteSection = "";
+        let licenseBadge = "";
+
+        if(deployedURL) deployedSiteSection = `[Deployed Site: ${deployedURL}](${deployedURL})`
+
+        // Append a given chapter to the TOC
+        let toc = "", tocLines=0;
+        const appendToc = (str)=>{
+            toc+=(tocLines+1)+". "+str+"\n";
+            tocLines++;
+        }
+
+        if(installation) {
+            appendToc("[Installation Instructions](#installation-instructions)");
+            installation = `## Installation Instructions
+\`\`\`
+${installation}
+\`\`\``;
+        }
+        if(usage) {
+            appendToc("[Usage](#usage)");
+            usage = `## Usage
+\`\`\`
+${usage}
+\`\`\``;
+        }
+        if(license) {
+            appendToc("[License](#license)")
+            licenseBadge = `![GitHub](https://img.shields.io/github/license/${user}/${repo}?style=for-the-badge)`
+            license = `## License
+This application uses the ${license} license. For more info, see the LICENSE document`
+        }
+        if(contributing) {
+            appendToc("[Contributing Guidelines](#contributing-guidelines)");
+            contributing = `## Contributing Guidelines
+${contributing}`;
+        }
+        if(tests) {
+            appendToc("[Tests](#tests)");
+            tests = `## Tests
+\`\`\`
+${tests}
+\`\`\``;
+        }
+        appendToc("[Status](#status)");
+        if(credits){
+            appendToc("[Credits](#credits)");
+            credits = `## Credits
+${credits}`;
+        }
+        appendToc("[Questions](#questions)")
+        if(questions){
+            questions = `## Questions
+If you have any questions, you can ask ${user} at ${questions} or through GitHub at [their profile](https://github.com/${user})`
+        }else{
+            questions = `## Questions
+If you have any questions, you can ask ${user} through GitHub at [their profile](https://github.com/${user})`
+        }
 
         const template = `# ${fullName}
 
+${licenseBadge}
+
 ${description}
 
-[Deployed Site: ${deployedURL}](${deployedURL})
+${deployedSiteSection}
 
 ![Screencap](screencap.png)
 
 ## Table of Contents
-1. [Installation Instructions](#installation-instructions)
-2. [Usage](#usage)
-3. [License](#license)
-4. [Contributing Guidelines](#contributing-guidelines)
-5. [Tests](#tests)
-6. [Status](#status)
-7. [Credits](#credits)
-8. [Questions](#questions)
-
-## Installation Instructions
+${toc}
 
 ${installation}
 
-## Usage
-
-\`\`\`
 ${usage}
-\`\`\`
 
-### License
-
-![GitHub](https://img.shields.io/github/license/${user}/${repo}?style=for-the-badge)
-
-## Contributing Guidelines
+${license}
 
 ${contributing}
 
-### Tests
-
-\`\`\`
 ${tests}
-\`\`\`
+
 
 ## Status
 
@@ -98,11 +140,7 @@ ${tests}
 ![GitHub last commit](https://img.shields.io/github/last-commit/${user}/${repo}?style=for-the-badge)
 ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/${user}/${repo}/latest?include_prereleases&style=for-the-badge)
 
-## Credits
-
 ${credits}
-
-## Questions
 
 ${questions}
 

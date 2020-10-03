@@ -1,8 +1,8 @@
 # Readme Generator
 
-This is a basic CLI to help generate readmes through a series of prompts. It doesn't do a ton right now, but it at least helps build a readme from the skeleton I gave it.
+![GitHub](https://img.shields.io/github/license/Mrjcowman/readmeGenerator?style=for-the-badge)
 
-[Deployed Site: ]()
+This CLI application allows the user to generate a professional README.md file for any github project by following a series of simple prompts related to the project. It dynamically generates sections of the readme based on the information given to make it a fit for any type of Full-Stack programming project.
 
 ![Screencap](screencap.png)
 
@@ -10,35 +10,25 @@ This is a basic CLI to help generate readmes through a series of prompts. It doe
 1. [Installation Instructions](#installation-instructions)
 2. [Usage](#usage)
 3. [License](#license)
-4. [Contributing Guidelines](#contributing-guidelines)
-5. [Tests](#tests)
-6. [Status](#status)
-7. [Credits](#credits)
-8. [Questions](#questions)
+4. [Status](#status)
+5. [Questions](#questions)
+
 
 ## Installation Instructions
-
 npm install
 
 ## Usage
-
 ```
 node index.js
 ```
 
-### License
-
-![GitHub](https://img.shields.io/github/license/Mrjcowman/readmeGenerator?style=for-the-badge)
-
-## Contributing Guidelines
+## License
+This application uses the MIT license. For more info, see the LICENSE document
 
 
 
-### Tests
 
-```
 
-```
 
 ## Status
 
@@ -47,11 +37,8 @@ node index.js
 ![GitHub last commit](https://img.shields.io/github/last-commit/Mrjcowman/readmeGenerator?style=for-the-badge)
 ![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/Mrjcowman/readmeGenerator/latest?include_prereleases&style=for-the-badge)
 
-## Credits
-
 
 
 ## Questions
-
-Mrjcowman@gmail.com
+If you have any questions, you can ask Mrjcowman at Mrjcowman@gmail.com or through GitHub at [their profile](https://github.com/Mrjcowman)
 

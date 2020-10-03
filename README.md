@@ -2,9 +2,9 @@
 
 ![GitHub](https://img.shields.io/github/license/Mrjcowman/readmeGenerator?style=for-the-badge)
 
-This CLI application allows the user to generate a professional README.md file for any github project by following a series of simple prompts related to the project. It dynamically generates sections of the readme based on the information given to make it a fit for any type of Full-Stack programming project.
+This CLI application allows the user to generate a professional README.md file for any github project by following a series of simple prompts related to the project. It dynamically generates sections of the readme based on the information given to make it a fit for any type of Full-Stack programming project. This README.md, as well as genREADME.md, are both generated using this generator.
 
-![Screencap](screencap.png)
+![Usage Guide](readme.gif)
 
 ## Table of Contents
 1. [Installation Instructions](#installation-instructions)

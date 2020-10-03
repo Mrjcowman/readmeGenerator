@@ -15,6 +15,10 @@ const inquirer = require("inquirer");
 
 const questions = JSON.parse(fs.readFileSync("questions.json", "utf-8"));
 
+console.log("Answer the following prompts to build your readme!");
+console.log("If a prompt isn't required, you can hit enter with");
+console.log("an empty input to skip it!");
+
 inquirer.prompt(questions)
     .then(responses=>{
         // TODO: Implement response handling
@@ -28,8 +32,8 @@ inquirer.prompt(questions)
         // x Github Repo
         // x Description*
         // x Installation Instructions
-        // x Usage*
-        // ~ License
+        // x Usage
+        // x License
         // x Contributing Guidelines
         // x Tests
         // x Credits
